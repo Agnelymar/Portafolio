@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("./HTML/img/fondo.jpg"); /* Imagen de fondo */
+            background-size: cover;
+            background-color: #68aa77; /* color de fondo en caso de no cargar la imagen */
+            color: #ecf6f2; /* Color de texto h2, h3 <p>,  */
+           
+        } 
+
+
+        .contenido {
+            max-width: 800px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 50px; /* espacios alrededor */
+            border-radius: 50px; /* esquinas redondeadas */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 1); /* sombra  derecha, abajo, izquierda */
+            
+        }
+
+        .foto {
+            text-align: center;
+           
+        }
+
+        .foto img {
+            border-radius: 10%;
+            width: 150px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        h1 {
+            color: #ffcc00;
+        }
+
+        .descripcion {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 1.1em;
+            line-height: 1.6em; /* da un interlineado adecuado al texto */
+            color: #f0e68c;
+        }
+
+        .Estudios {
+            margin: 20px 0px;
+        }
+
+        .habilidades {
+            display: flex;
+            justify-content:space-between; /*espacio entre los bloques de habilidades*/
+        }
+
+        .habilidades ul {
+            list-style-type: none; /* no quiero viñeta o numeración*/
+            padding: 0; /* sin espaciado para alinear con el título de la habilidad */
+        }
+
+        .social {
+            text-align: center;
+        }
+
+        .social a {
+            margin: 0 10px;
+            color: #ffcc00;
+        }
+
+        .video {
+            text-align: center;
+            
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenido">
+        <div class="foto">
+            <img src="./HTML/img/de_frente.jpg" alt="Foto de perfil">
+        </div>
+        <h1>Walter Omar Fernández Peñaloza</h1> <!-- Nombre --->
+        <h2>Modelador BIM Mecánico</h2> <!-- Profesión -->
+
+        <div class="descripcion"> <!-- Descripción del perfil -->
+            Soy un profesional apasionado por la tecnología BIM, especializado en modelado 3D de sistemas constructivos para proyectos hospitalarios, de laboratorio e industriales. Mi enfoque está en la precisión, la innovación y la mejora de procesos mediante herramientas digitales.
+        </div>
+
+        <div class="Estudios">
+            <h3>Estudios</h3>
+            <p>Universidad Central de Venezuela - Ingeniería Mecánica (Último semestre)</p>
+        </div>
+
+        <div class="habilidades">
+            <div>
+                <h3>Habilidades Técnicas</h3>
+                <ul>
+                    <li>Autodesk Revit</li>
+                    <li>Navisworks</li>
+                    <li>Detección de interferencias</li>
+                    <li>Modelado 3D</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Habilidades Blandas</h3>
+                <ul>
+                    <li>Comunicación efectiva</li>
+                    <li>Resolución de problemas</li>
+                    <li>Adaptabilidad</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="social">
+            <h3>Redes Sociales</h3>
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            <!-- <a href="https://www.instagram.com" target="_blank">Instagram</a> -->
+        </div>
+
+        <div class="video">
+            <h3>Video de Presentación</h3>
+            <iframe width="400" height="315" src="./HTML/video/WOFPvideo.mp4" title="Video de Presentación" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Walter Omar Fernández Peñaloza. Todos los derechos reservados.
+    </footer>
+</body>
+</html>
