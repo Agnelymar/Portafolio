@@ -12,11 +12,12 @@
             background-size: cover;
             background-color: #68aa77; /* color de fondo en caso de no cargar la imagen */
             color: #ecf6f2; /* Color de texto h2, h3 <p>,  */
-           
+            margin: 0; /* para mantener la presentación en diferentes dispositivos */
+            padding: 0; /* para mantener la presentación en diferentes dispositivos */
         } 
 
 
-        .contenido {
+        .contenedor {
             max-width: 800px;
             margin: auto;
             background: rgba(0, 0, 0, 0.6);
@@ -91,9 +92,9 @@
     </style>
 </head>
 <body>
-    <div class="contenido">
+    <div class="contenedor">
         <div class="foto">
-            <img src="/HTML/img/de_frente.jpg" alt="Foto de perfil">
+            <img src="./HTML/img/de_frente.jpg" alt="Foto de perfil">
         </div>
         <h1>Walter Omar Fernández Peñaloza</h1> <!-- Nombre --->
         <h2>Modelador BIM Mecánico</h2> <!-- Profesión -->
@@ -135,7 +136,14 @@
 
         <div class="video">
             <h3>Video de Presentación</h3>
-            <iframe width="300" height="315" src="./HTML/video/WOFPvideo.mp4" title="Video de Presentación" frameborder="0" allowfullscreen></iframe>
+            <iframe
+                width="300" 
+                height="315" 
+                src="./HTML/video/WOFPvideo.mp4" 
+                title="Video de Presentación" 
+                frameborder="0" 
+                allowfullscreen>
+            </iframe>
         </div>
     </div>
     <footer>
